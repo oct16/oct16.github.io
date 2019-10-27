@@ -54,7 +54,7 @@
 html,
 body {
   margin: 0 !important;
-  font-family: 'Avenir, Helvetica, Arial, sans-serif';
+  font-family: 'PingFang SC', 'Hiragino Sans GB', 'Heiti SC', 'Microsoft YaHei', 'WenQuanYi Micro Hei';
   font-size: 14px;
   color: #2d4054;
   position: relative;
@@ -120,7 +120,7 @@ a {
   padding: 3px 8px;
   list-style: disc;
   color: #999;
-  font-size: 12px;
+  font-size: 10px;
   cursor: pointer;
 }
 .app-left .history li:hover {
