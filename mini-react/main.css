@@ -75,14 +75,15 @@ li {
 }
 a {
   text-decoration: none;
+  color: #666;
 }
-.cruise-header {
+.app-header {
   grid-area: header;
   background: #fff;
   box-shadow: 0px 0px 10px 0 #888;
   z-index: 10;
 }
-.cruise-header .logo {
+.app-header .logo {
   box-sizing: border-box;
   height: 60px;
   padding: 10px;
@@ -90,7 +91,7 @@ a {
   display: block;
   cursor: pointer;
 }
-.cruise-content {
+.app-content {
   grid-area: content;
   background: #fff;
   display: grid;
@@ -99,22 +100,22 @@ a {
   grid-template-rows: 1fr;
   min-height: calc(100vh - 60px - 24px);
 }
-.cruise-left {
+.app-left {
   grid-area: leftside;
   background: #2d4054;
   color: #ccc;
   display: grid;
 }
-.cruise-left .history {
+.app-left .history {
   display: grid;
   align-content: end;
   font-size: 24px;
   padding: 15px;
 }
-.cruise-left .history .title {
+.app-left .history .title {
   padding: 10px 0;
 }
-.cruise-left .history li {
+.app-left .history li {
   margin-left: 10px;
   padding: 3px 8px;
   list-style: disc;
@@ -122,45 +123,45 @@ a {
   font-size: 12px;
   cursor: pointer;
 }
-.cruise-left .history li:hover {
+.app-left .history li:hover {
   color: #00b4cf;
 }
-.cruise-left .nav {
+.app-left .nav {
   font-size: 14px;
   font-family: Arial, Helvetica, Arial, sans-serif;
   padding-top: 20px;
 }
-.cruise-left .nav li .nav-item-container {
+.app-left .nav li .nav-item-container {
   light-height: 14px;
   padding: 15px;
   cursor: pointer;
 }
-.cruise-left .nav li .nav-item-container:hover {
+.app-left .nav li .nav-item-container:hover {
   background: #435466;
   transition: all 0.5s;
 }
-.cruise-left .nav li .nav-item-container span.title {
+.app-left .nav li .nav-item-container span.title {
   color: #fff;
   margin-left: 8px;
 }
-.cruise-left .nav a[active] {
+.app-left .nav a[active] {
   background: #435466;
 }
-.cruise-left .nav a[active] i,
-.cruise-left .nav a[active] span.title {
+.app-left .nav a[active] i,
+.app-left .nav a[active] span.title {
   color: #00b4cf;
 }
-.cruise-left .nav i,
-.cruise-left .nav span.title {
+.app-left .nav i,
+.app-left .nav span.title {
   color: #fff;
 }
-.cruise-left .nav span.title {
+.app-left .nav span.title {
   margin: 0 0 0 15px;
 }
-.cruise-right {
+.app-right {
   grid-area: right-side;
 }
-.cruise-footer {
+.app-footer {
   grid-area: footer;
   background: #fff;
   box-shadow: 10px 0px 0px 0 #888;
@@ -168,43 +169,43 @@ a {
   text-align: center;
   padding: 5px;
 }
-.cruise {
+.app {
   background: #f3f3f3;
   display: grid;
   grid-template-areas: 'header header' 'content content' 'footer footer';
   grid-template-columns: 1fr;
   grid-template-rows: 60px 1fr;
 }
-.cruise .cruise-agent {
+.app .app-cooper {
   background: #f3f3f3;
 }
-.cruise .cruise-agent .agent-list {
+.app .app-cooper .cooper-list {
   margin: 10px 20px 0 20px;
   display: grid;
 }
-.cruise .cruise-agent .agent-list .agent-list-item {
+.app .app-cooper .cooper-list .cooper-list-item {
   background: #fff;
   margin: 10px 0;
   grid-template-columns: 100px auto;
   grid-template-rows: 1fr;
   display: grid;
 }
-.cruise .cruise-agent .agent-list .agent-list-item img {
+.app .app-cooper .cooper-list .cooper-list-item img {
   margin-top: 10px;
   margin-left: 10px;
   height: 80px;
 }
-.cruise .cruise-agent .agent-list .agent-list-item .detail {
+.app .app-cooper .cooper-list .cooper-list-item .detail {
   height: 100%;
   padding: 10px;
   box-sizing: border-box;
 }
-.cruise .cruise-agent .agent-list .agent-list-item .detail .detail-header {
+.app .app-cooper .cooper-list .cooper-list-item .detail .detail-header {
   margin-top: 10px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
-.cruise .cruise-agent .agent-list .agent-list-item .detail .detail-header .agent-status {
+.app .app-cooper .cooper-list .cooper-list-item .detail .detail-header .cooper-status {
   display: inline-block;
   padding: 0 5px;
   line-height: 16px;
@@ -213,36 +214,36 @@ a {
   color: #fff;
   background: #7fbc39;
 }
-.cruise .cruise-agent .agent-list .agent-list-item .detail .detail-header .agent-status.status-building {
+.app .app-cooper .cooper-list .cooper-list-item .detail .detail-header .cooper-status.status-building {
   background: #00b4cf;
 }
-.cruise .cruise-agent .agent-list .agent-list-item .detail .detail-header i {
+.app .app-cooper .cooper-list .cooper-list-item .detail .detail-header i {
   color: #435466;
   vertical-align: baseline;
   font-size: 16px;
   line-height: 20px;
   margin-right: 5px;
 }
-.cruise .cruise-agent .agent-list .agent-list-item .detail .detail-header .detail-title {
+.app .app-cooper .cooper-list .cooper-list-item .detail .detail-header .detail-title {
   vertical-align: baseline;
   line-height: 16px;
   color: #00b4cf;
 }
-.cruise .cruise-agent .agent-list .agent-list-item .detail .detail-bottom {
+.app .app-cooper .cooper-list .cooper-list-item .detail .detail-bottom {
   margin-top: 25px;
 }
-.cruise .cruise-agent .agent-list .agent-list-item .detail .detail-bottom .tags {
+.app .app-cooper .cooper-list .cooper-list-item .detail .detail-bottom .tags {
   vertical-align: middle;
   display: inline-block;
 }
-.cruise .cruise-agent .agent-list .agent-list-item .detail .detail-bottom .tags >li {
+.app .app-cooper .cooper-list .cooper-list-item .detail .detail-bottom .tags >li {
   float: left;
   margin-left: 10px;
   padding: 1px 8px;
   background: #efefef;
   font-size: 16px;
 }
-.cruise .cruise-agent .agent-list .agent-list-item .detail .detail-bottom .tags >li i {
+.app .app-cooper .cooper-list .cooper-list-item .detail .detail-bottom .tags >li i {
   margin-left: 2px;
   font-size: 14px;
   margin-left: 2px;
@@ -250,7 +251,7 @@ a {
   line-height: 18px;
   vertical-align: bottom;
 }
-.cruise .cruise-agent .agent-list .agent-list-item .detail .detail-bottom button {
+.app .app-cooper .cooper-list .cooper-list-item .detail .detail-bottom button {
   padding: 0;
   background: #00b4cf;
   color: #fff;
@@ -259,59 +260,60 @@ a {
   border: none;
   vertical-align: middle;
 }
-.cruise .cruise-agent .agent-list .agent-list-item .detail .detail-bottom i.icofont-not-allowed {
+.app .app-cooper .cooper-list .cooper-list-item .detail .detail-bottom i.icofont-not-allowed {
   margin-right: 5px;
 }
-.cruise .cruise-agent .agent-list .agent-list-item .detail .detail-bottom .deny-button {
+.app .app-cooper .cooper-list .cooper-list-item .detail .detail-bottom .deny-button {
   float: right;
   width: 60px;
 }
-.cruise .cruise-agent .agent-list .agent-list-item .detail .detail-bottom .add-button {
+.app .app-cooper .cooper-list .cooper-list-item .detail .detail-bottom .add-button {
   width: 20px;
   height: 20px;
   line-height: 20px;
   cursor: pointer;
 }
-.cruise .cruise-agent .agent-info {
+.app .app-cooper .cooper-info {
   display: grid;
   grid-template-areas: 'info-building info-idle info-detail';
   grid-template-columns: 1fr 1fr 1fr;
-  margin: 10px 10px 0 10px;
+  margin: 0 10px;
+  padding-top: 10px;
 }
-.cruise .cruise-agent .agent-info >li {
+.app .app-cooper .cooper-info >li {
   box-sizing: border-box;
   height: 100px;
   background: #fff;
   margin: 10px;
   position: relative;
 }
-.cruise .cruise-agent .agent-info >li.info-building {
+.app .app-cooper .cooper-info >li.info-building {
   grid-area: info-building;
   background: #00b4cf;
 }
-.cruise .cruise-agent .agent-info >li.info-idle {
+.app .app-cooper .cooper-info >li.info-idle {
   grid-area: info-idle;
   background: #7fbc39;
 }
-.cruise .cruise-agent .agent-info >li.info-detail {
+.app .app-cooper .cooper-info >li.info-detail {
   grid-area: info-detail;
 }
-.cruise .cruise-agent .agent-info >li.panel {
+.app .app-cooper .cooper-info >li.panel {
   color: #fff;
   padding: 10px;
 }
-.cruise .cruise-agent .agent-info >li.panel .name {
+.app .app-cooper .cooper-info >li.panel .name {
   font-size: 20px;
 }
-.cruise .cruise-agent .agent-info >li.panel .count {
+.app .app-cooper .cooper-info >li.panel .count {
   margin: 0 10px;
   font-size: 44px;
   text-align: right;
 }
-.cruise .cruise-agent .agent-info >li.font-bg {
-  font-family: 'cruise';
+.app .app-cooper .cooper-info >li.font-bg {
+  font-family: 'app';
 }
-.cruise .cruise-agent .agent-info >li.font-bg.icofont-ui-settings:before {
+.app .app-cooper .cooper-info >li.font-bg.icofont-ui-settings:before {
   color: rgba(255,255,255,0.1);
   width: 100%;
   height: 100%;
@@ -322,7 +324,7 @@ a {
   top: 0;
   line-height: 100px;
 }
-.cruise .cruise-agent .agent-info >li.font-bg.icofont-coffee-mug:before {
+.app .app-cooper .cooper-info >li.font-bg.icofont-coffee-mug:before {
   content: '\eb57';
   color: rgba(255,255,255,0.1);
   width: 100%;
@@ -334,74 +336,74 @@ a {
   top: 0;
   line-height: 100px;
 }
-.cruise .cruise-agent .agent-info .info-detail table {
+.app .app-cooper .cooper-info .info-detail table {
   width: 100%;
   height: 100%;
 }
-.cruise .cruise-agent .agent-info .info-detail table td {
+.app .app-cooper .cooper-info .info-detail table td {
   max-width: 0;
   text-align: center;
   align-items: center;
 }
-.cruise .cruise-agent .agent-info .info-detail table td .name {
+.app .app-cooper .cooper-info .info-detail table td .name {
   height: 20px;
 }
-.cruise .cruise-agent .agent-info .info-detail table td .count {
+.app .app-cooper .cooper-info .info-detail table td .count {
   line-height: 50px;
   height: 50px;
   font-size: 20px;
 }
-.cruise .cruise-agent .agent-tab {
+.app .app-cooper .cooper-tab {
   margin: 0 20px;
   display: grid;
   grid-template-areas: 'tab-filter tab-search tab-th';
   grid-template-columns: 1fr 1fr 1fr;
 }
-.cruise .cruise-agent .agent-tab >li {
+.app .app-cooper .cooper-tab >li {
   box-sizing: border-box;
   height: 50px;
   background: #fff;
 }
-.cruise .cruise-agent .agent-tab .tab-search .input-group {
+.app .app-cooper .cooper-tab .tab-search .input-group {
   padding: 10px;
   vertical-align: middle;
   position: relative;
 }
-.cruise .cruise-agent .agent-tab .tab-search .input-group label {
+.app .app-cooper .cooper-tab .tab-search .input-group label {
   position: absolute;
   font-size: 18px;
   left: 20px;
   top: 16px;
   color: #e1e4e6;
 }
-.cruise .cruise-agent .agent-tab .tab-search .input-group input {
+.app .app-cooper .cooper-tab .tab-search .input-group input {
   height: 30px;
   width: 180px;
   text-indent: 34px;
   border: none;
   background: #f3f3f3;
 }
-.cruise .cruise-agent .agent-tab .tab-th {
+.app .app-cooper .cooper-tab .tab-th {
   line-height: 56px;
   vertical-align: middle;
   text-align: right;
 }
-.cruise .cruise-agent .agent-tab .tab-th i {
+.app .app-cooper .cooper-tab .tab-th i {
   margin: 0 5px;
   cursor: pointer;
 }
-.cruise .cruise-agent .agent-tab .tab-th i.active {
+.app .app-cooper .cooper-tab .tab-th i.active {
   color: #00b4cf;
 }
-.cruise .cruise-agent .agent-tab .tab-filter {
+.app .app-cooper .cooper-tab .tab-filter {
   grid-area: tab-filter;
 }
-.cruise .cruise-agent .agent-tab .tab-filter ul {
+.app .app-cooper .cooper-tab .tab-filter ul {
   display: table;
   width: 100%;
   height: 100%;
 }
-.cruise .cruise-agent .agent-tab .tab-filter ul li {
+.app .app-cooper .cooper-tab .tab-filter ul li {
   display: table-cell;
   height: 100%;
   text-align: center;
@@ -410,7 +412,7 @@ a {
   cursor: pointer;
   vertical-align: middle;
 }
-.cruise .cruise-agent .agent-tab .tab-filter ul li::after {
+.app .app-cooper .cooper-tab .tab-filter ul li::after {
   position: absolute;
   content: '';
   display: block;
@@ -420,15 +422,15 @@ a {
   width: 1px;
   background: #f3f3f3;
 }
-.cruise .cruise-agent .agent-tab .tab-filter ul li:hover {
+.app .app-cooper .cooper-tab .tab-filter ul li:hover {
   background: #00b4cf;
   color: #fff !important;
   transition: all 0.5s;
 }
-.cruise .cruise-agent .agent-tab .tab-filter ul li[active] {
+.app .app-cooper .cooper-tab .tab-filter ul li[active] {
   color: #00b4cf;
 }
-.cruise .cruise-agent .agent-tab .tab-filter ul li[active]::before {
+.app .app-cooper .cooper-tab .tab-filter ul li[active]::before {
   position: absolute;
   content: '';
   display: block;
@@ -438,54 +440,54 @@ a {
   height: 3px;
   background: #00b4cf;
 }
-.cruise .cruise-agent .agent-tab .tab-search {
+.app .app-cooper .cooper-tab .tab-search {
   grid-area: tab-search;
 }
-.cruise .cruise-agent .agent-tab .tab-th {
+.app .app-cooper .cooper-tab .tab-th {
   grid-area: tab-th;
 }
 @media screen and (max-width: 768px) {
-  .cruise .cruise-left {
+  .app .app-left {
     display: none;
   }
-  .cruise .cruise-content {
+  .app .app-content {
     max-width: 768px;
     width: 100%;
     grid-template-areas: 'right-side';
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
   }
-  .cruise .cruise-agent .agent-tab {
+  .app .app-cooper .cooper-tab {
     margin: 10px;
     display: grid;
     grid-template-areas: 'tab-filter' 'tab-search' 'tab-th';
     grid-template-rows: 1fr 1fr 0;
     grid-template-columns: 1fr;
   }
-  .cruise .cruise-agent .agent-tab .tab-search .input-group input {
+  .app .app-cooper .cooper-tab .tab-search .input-group input {
     width: 100%;
   }
-  .cruise .cruise-agent .agent-tab .tab-th {
+  .app .app-cooper .cooper-tab .tab-th {
     display: none;
   }
-  .cruise .cruise-agent .agent-info {
+  .app .app-cooper .cooper-info {
     margin: 0;
     grid-template-areas: 'info-building info-idle' 'info-detail info-detail';
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
   }
-  .cruise .cruise-agent .agent-list {
+  .app .app-cooper .cooper-list {
     margin: 10px;
     margin-bottom: 0px;
   }
-  .cruise .cruise-agent .agent-list .agent-list-item {
+  .app .app-cooper .cooper-list .cooper-list-item {
     height: auto;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
     display: grid;
     position: relative;
   }
-  .cruise .cruise-agent .agent-list .agent-list-item:before {
+  .app .app-cooper .cooper-list .cooper-list-item:before {
     content: '';
     width: 4px;
     background: #7fbc39;
@@ -494,20 +496,20 @@ a {
     left: 0;
     top: 0;
   }
-  .cruise .cruise-agent .agent-list .agent-list-item[building]:before {
+  .app .app-cooper .cooper-list .cooper-list-item[building]:before {
     background: #00b4cf;
   }
-  .cruise .cruise-agent .agent-list .agent-list-item .detail .detail-header {
+  .app .app-cooper .cooper-list .cooper-list-item .detail .detail-header {
     margin-top: 0;
     grid-template-columns: 1fr;
   }
-  .cruise .cruise-agent .agent-list .agent-list-item .detail .detail-header li:nth-child(2) {
+  .app .app-cooper .cooper-list .cooper-list-item .detail .detail-header li:nth-child(2) {
     display: none;
   }
-  .cruise .cruise-agent .agent-list .agent-list-item .detail .detail-bottom {
+  .app .app-cooper .cooper-list .cooper-list-item .detail .detail-bottom {
     margin-top: 0;
   }
-  .cruise .cruise-agent .agent-list .agent-list-item .logo {
+  .app .app-cooper .cooper-list .cooper-list-item .logo {
     display: none;
   }
   .dialog .dialog-content {
@@ -769,33 +771,6 @@ a {
     transform: rotate(360deg);
   }
 }
-
-html,
-body {
-  margin: 0 !important;
-  font-family: 'Avenir, Helvetica, Arial, sans-serif';
-  font-size: 14px;
-  color: #2d4054;
-  position: relative;
-}
-table,
-tbody,
-tr,
-td {
-  margin: 0;
-  padding: 0;
-  border-collapse: collapse;
-}
-ul,
-li {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-a {
-  text-decoration: none;
-}
-
 
 
 /*# sourceMappingURL=main.css.map*/
